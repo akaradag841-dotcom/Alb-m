@@ -1,31 +1,46 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#171717" />
-  <title>Ahmet Zeynep Nikah Görüntüleri</title>
-  <meta name="description" content="Ahmet Zeynep Nikah Görüntüleri" />
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <meta name="theme-color" content="#f5eee5">
+
+  <title>Ahmet & Zeynep | Nikah Albümü</title>
+
+  <meta
+    name="description"
+    content="Ahmet ve Zeynep Nikah Görüntüleri"
+  >
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
+
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <link
-    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600&display=swap"
     rel="stylesheet"
   >
 
   <style>
+
     :root{
-      --bg:#f7f4ef;
-      --card:#ffffff;
-      --text:#171717;
-      --muted:#77716b;
-      --line:#e7dfd7;
-      --accent:#8f6547;
-      --accent-dark:#68472f;
-      --shadow:0 18px 50px rgba(34,25,18,.10);
-      --radius:24px;
+      --cream:#f8f3ec;
+      --cream2:#efe4d8;
+      --white:#ffffff;
+      --gold:#b99a6a;
+      --gold-dark:#8d7047;
+      --green:#536255;
+      --green-dark:#354039;
+      --text:#3b342f;
+      --muted:#81776f;
+      --line:rgba(185,154,106,.28);
+      --danger:#a84d43;
+      --shadow:0 18px 50px rgba(61,48,38,.12);
     }
 
     *{
@@ -38,21 +53,20 @@
 
     body{
       margin:0;
-      font-family:"DM Sans",system-ui,-apple-system,sans-serif;
       color:var(--text);
+      font-family:"Montserrat",sans-serif;
       background:
         radial-gradient(
-          circle at 15% 10%,
-          rgba(207,177,150,.23),
-          transparent 26rem
+          circle at 10% 0%,
+          rgba(185,154,106,.18),
+          transparent 420px
         ),
         radial-gradient(
-          circle at 90% 5%,
-          rgba(157,124,95,.16),
-          transparent 24rem
+          circle at 100% 15%,
+          rgba(83,98,85,.12),
+          transparent 420px
         ),
-        var(--bg);
-
+        var(--cream);
       min-height:100vh;
     }
 
@@ -65,303 +79,475 @@
       cursor:pointer;
     }
 
-    .wrap{
+    img{
+      max-width:100%;
+    }
+
+    .container{
       width:min(1180px,calc(100% - 28px));
       margin:auto;
     }
 
-    header{
-      padding:28px 0 14px;
+    /* ÜST */
 
+    .topbar{
       display:flex;
-      align-items:center;
       justify-content:space-between;
-
-      gap:16px;
+      align-items:center;
+      padding:22px 0;
+      gap:15px;
     }
 
-    .brand{
+    .mini-logo{
       display:flex;
       align-items:center;
-      gap:12px;
-
-      font-weight:700;
+      gap:11px;
     }
 
-    .brand-mark{
+    .mini-logo-icon{
       width:42px;
       height:42px;
-
-      border-radius:15px;
-
+      border-radius:50%;
+      border:1px solid var(--line);
       display:grid;
       place-items:center;
-
-      background:#171717;
-      color:white;
-
-      box-shadow:var(--shadow);
-
-      font-size:20px;
-    }
-
-    .admin-link{
-      border:1px solid var(--line);
-
       background:rgba(255,255,255,.72);
-
-      color:var(--text);
-
-      padding:10px 14px;
-
-      border-radius:999px;
-
-      backdrop-filter:blur(10px);
+      color:var(--gold-dark);
+      font-family:"Cormorant Garamond",serif;
+      font-size:22px;
+      font-weight:600;
+      box-shadow:0 8px 25px rgba(0,0,0,.05);
     }
+
+    .mini-logo-text{
+      font-family:"Cormorant Garamond",serif;
+      font-size:19px;
+      font-weight:600;
+    }
+
+    .scroll-upload{
+      border:none;
+      background:var(--green-dark);
+      color:white;
+      padding:11px 16px;
+      border-radius:999px;
+      font-size:13px;
+      font-weight:600;
+      box-shadow:0 8px 25px rgba(53,64,57,.18);
+    }
+
+    /* HERO */
 
     .hero{
-      margin:8px 0 28px;
-
-      min-height:360px;
-
-      border-radius:32px;
-
-      overflow:hidden;
-
+      min-height:540px;
+      border-radius:34px;
       position:relative;
-
+      overflow:hidden;
       display:flex;
-
-      align-items:flex-end;
-
-      padding:34px;
-
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:35px 20px;
+      box-shadow:var(--shadow);
       background:
         linear-gradient(
-          135deg,
-          rgba(18,18,18,.78),
-          rgba(18,18,18,.20)
+          rgba(35,35,30,.36),
+          rgba(35,35,30,.48)
         ),
-        url(
-          "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1800&q=85"
-        )
+        url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1800&q=90")
         center/cover;
-
-      box-shadow:var(--shadow);
     }
 
-    .hero::after{
+    .hero::before{
       content:"";
-
       position:absolute;
-
-      inset:0;
-
-      background:
-        linear-gradient(
-          to top,
-          rgba(0,0,0,.52),
-          transparent 60%
-        );
-
+      inset:18px;
+      border:1px solid rgba(255,255,255,.46);
+      border-radius:25px;
       pointer-events:none;
     }
 
-    .hero-copy{
+    .hero-content{
       position:relative;
-
-      z-index:1;
-
+      z-index:2;
       color:white;
-
-      max-width:710px;
+      max-width:780px;
     }
 
-    .eyebrow{
+    .hero-small{
+      letter-spacing:.3em;
       text-transform:uppercase;
-
-      letter-spacing:.18em;
-
       font-size:12px;
-
-      font-weight:700;
-
-      opacity:.82;
+      margin-bottom:15px;
     }
 
-    h1{
-      font-family:"Playfair Display",serif;
-
-      font-size:clamp(42px,8vw,84px);
-
-      line-height:.96;
-
-      margin:10px 0 14px;
-    }
-
-    .hero p{
+    .hero-names{
+      font-family:"Great Vibes",cursive;
+      font-size:clamp(68px,13vw,135px);
+      font-weight:400;
+      line-height:.9;
       margin:0;
-
-      font-size:clamp(15px,2vw,19px);
-
-      opacity:.9;
+      text-shadow:0 5px 30px rgba(0,0,0,.2);
     }
 
-    .toolbar{
-      display:flex;
-
-      align-items:end;
-
-      justify-content:space-between;
-
-      gap:16px;
-
-      flex-wrap:wrap;
-
-      margin:30px 0 18px;
+    .hero-title{
+      margin-top:25px;
+      font-family:"Cormorant Garamond",serif;
+      font-size:clamp(21px,4vw,34px);
+      letter-spacing:.06em;
     }
 
-    .toolbar h2{
-      font-size:25px;
-
-      margin:0 0 4px;
-    }
-
-    .toolbar p{
-      margin:0;
-
-      color:var(--muted);
-    }
-
-    .counter{
-      background:white;
-
-      border:1px solid var(--line);
-
-      border-radius:999px;
-
-      padding:9px 13px;
-
-      color:var(--muted);
-
+    .hero-date{
+      margin-top:12px;
       font-size:14px;
+      letter-spacing:.16em;
+    }
+
+    /* INTRO */
+
+    .intro{
+      text-align:center;
+      padding:65px 15px 38px;
+      max-width:850px;
+      margin:auto;
+    }
+
+    .ornament{
+      color:var(--gold);
+      font-family:"Cormorant Garamond",serif;
+      font-size:28px;
+      margin-bottom:10px;
+    }
+
+    .intro h2{
+      margin:0;
+      font-family:"Cormorant Garamond",serif;
+      font-size:clamp(36px,7vw,58px);
+      font-weight:500;
+    }
+
+    .intro p{
+      color:var(--muted);
+      font-size:14px;
+      line-height:1.8;
+      max-width:620px;
+      margin:15px auto 0;
+    }
+
+    /* UPLOAD */
+
+    .upload-section{
+      margin:15px auto 60px;
+      max-width:850px;
+    }
+
+    .upload-card{
+      background:rgba(255,255,255,.85);
+      border:1px solid var(--line);
+      box-shadow:var(--shadow);
+      border-radius:28px;
+      padding:28px;
+      backdrop-filter:blur(12px);
+    }
+
+    .upload-title{
+      text-align:center;
+    }
+
+    .upload-title .camera{
+      width:58px;
+      height:58px;
+      margin:0 auto 13px;
+      border-radius:50%;
+      display:grid;
+      place-items:center;
+      background:var(--cream2);
+      font-size:25px;
+    }
+
+    .upload-title h3{
+      margin:0;
+      font-family:"Cormorant Garamond",serif;
+      font-size:36px;
+      font-weight:600;
+    }
+
+    .upload-title p{
+      color:var(--muted);
+      line-height:1.65;
+      font-size:13px;
+      margin:8px auto 20px;
+    }
+
+    .drop-area{
+      border:1.5px dashed rgba(141,112,71,.5);
+      background:#fcfaf7;
+      border-radius:22px;
+      padding:27px 18px;
+      text-align:center;
+      transition:.2s;
+    }
+
+    .drop-area.drag{
+      background:#f2eadf;
+      transform:scale(1.01);
+    }
+
+    .file-input{
+      display:none;
+    }
+
+    .choose-btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      border:0;
+      background:var(--green-dark);
+      color:#fff;
+      border-radius:999px;
+      padding:13px 22px;
+      font-weight:600;
+      font-size:14px;
+    }
+
+    .drop-text{
+      margin-top:13px;
+      color:var(--muted);
+      font-size:12px;
+    }
+
+    .preview-title{
+      display:none;
+      margin-top:20px;
+      font-family:"Cormorant Garamond",serif;
+      font-size:20px;
+      font-weight:600;
+    }
+
+    .preview-grid{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:9px;
+      margin-top:11px;
+    }
+
+    .preview-item{
+      position:relative;
+      border-radius:13px;
+      overflow:hidden;
+      aspect-ratio:1/1;
+      background:#eee;
+    }
+
+    .preview-item img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+
+    .preview-remove{
+      position:absolute;
+      top:6px;
+      right:6px;
+      width:29px;
+      height:29px;
+      border:0;
+      border-radius:50%;
+      background:rgba(0,0,0,.65);
+      color:white;
+      display:grid;
+      place-items:center;
+      font-size:16px;
+    }
+
+    .upload-btn{
+      display:none;
+      width:100%;
+      border:0;
+      margin-top:18px;
+      padding:15px 18px;
+      border-radius:15px;
+      background:linear-gradient(
+        135deg,
+        var(--gold-dark),
+        var(--gold)
+      );
+      color:#fff;
+      font-weight:600;
+      box-shadow:0 10px 25px rgba(141,112,71,.18);
+    }
+
+    .upload-btn:disabled{
+      opacity:.55;
+      cursor:not-allowed;
+    }
+
+    .progress-wrap{
+      display:none;
+      margin-top:16px;
+    }
+
+    .progress-bar{
+      height:8px;
+      background:#eee7df;
+      border-radius:999px;
+      overflow:hidden;
+    }
+
+    .progress-fill{
+      width:0%;
+      height:100%;
+      background:var(--green);
+      transition:.25s;
+    }
+
+    .status{
+      min-height:20px;
+      text-align:center;
+      margin-top:12px;
+      font-size:13px;
+      color:var(--muted);
+    }
+
+    .status.success{
+      color:#477151;
+    }
+
+    .status.error{
+      color:var(--danger);
+    }
+
+    /* GALLERY */
+
+    .gallery-section{
+      padding-bottom:70px;
+    }
+
+    .gallery-head{
+      display:flex;
+      align-items:flex-end;
+      justify-content:space-between;
+      gap:15px;
+      margin-bottom:22px;
+    }
+
+    .gallery-head h3{
+      margin:0;
+      font-family:"Cormorant Garamond",serif;
+      font-size:40px;
+    }
+
+    .gallery-head p{
+      margin:4px 0 0;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    .photo-counter{
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.75);
+      padding:9px 14px;
+      border-radius:999px;
+      color:var(--muted);
+      font-size:12px;
     }
 
     .gallery{
       display:grid;
-
-      grid-template-columns:
-        repeat(3,1fr);
-
-      gap:14px;
-
-      padding-bottom:56px;
+      grid-template-columns:repeat(3,1fr);
+      gap:13px;
     }
 
-    .photo{
+    .photo-card{
       position:relative;
-
-      border:0;
-
       padding:0;
-
-      aspect-ratio:1/1;
-
+      border:0;
       overflow:hidden;
-
       border-radius:20px;
-
-      background:#eae5df;
-
-      box-shadow:
-        0 5px 20px rgba(0,0,0,.06);
+      background:#ddd;
+      aspect-ratio:1/1;
+      box-shadow:0 8px 25px rgba(0,0,0,.06);
     }
 
-    .photo img{
+    .photo-card img{
       width:100%;
-
       height:100%;
-
       object-fit:cover;
-
       display:block;
-
-      transition:.35s transform;
+      transition:transform .35s ease;
     }
 
-    .photo:hover img{
-      transform:scale(1.035);
+    .photo-card:hover img{
+      transform:scale(1.04);
     }
 
-    .photo .shade{
+    .photo-card::after{
+      content:"Görüntüle";
       position:absolute;
-
       inset:auto 0 0;
-
-      padding:28px 13px 11px;
-
-      background:
-        linear-gradient(
-          transparent,
-          rgba(0,0,0,.45)
-        );
-
+      padding:35px 13px 12px;
+      background:linear-gradient(
+        transparent,
+        rgba(0,0,0,.50)
+      );
       color:white;
-
       text-align:left;
-
-      font-size:12px;
-
+      font-size:11px;
       opacity:0;
-
       transition:.2s;
     }
 
-    .photo:hover .shade{
+    .photo-card:hover::after{
       opacity:1;
     }
 
     .empty{
       grid-column:1/-1;
-
-      background:rgba(255,255,255,.74);
-
-      border:1px dashed #d6ccc3;
-
-      border-radius:24px;
-
-      padding:50px 20px;
-
       text-align:center;
-
+      border:1px dashed var(--line);
+      border-radius:22px;
+      padding:45px 20px;
+      background:rgba(255,255,255,.5);
       color:var(--muted);
+      font-size:13px;
     }
 
     .empty strong{
       display:block;
-
       color:var(--text);
-
-      font-size:20px;
-
-      margin-bottom:7px;
+      font-family:"Cormorant Garamond",serif;
+      font-size:26px;
+      margin-bottom:5px;
     }
+
+    .loader{
+      width:34px;
+      height:34px;
+      margin:40px auto;
+      border:3px solid #e2d9cf;
+      border-top-color:var(--gold-dark);
+      border-radius:50%;
+      animation:spin .8s linear infinite;
+    }
+
+    @keyframes spin{
+      to{
+        transform:rotate(360deg);
+      }
+    }
+
+    /* MODAL */
 
     .modal{
       position:fixed;
-
+      z-index:100;
       inset:0;
-
-      z-index:20;
-
-      background:rgba(11,10,9,.93);
-
       display:none;
-
-      align-items:center;
-
       justify-content:center;
-
+      align-items:center;
+      background:rgba(10,10,10,.94);
       padding:18px;
     }
 
@@ -371,379 +557,127 @@
 
     .modal img{
       max-width:96vw;
-
-      max-height:88vh;
-
+      max-height:90vh;
       object-fit:contain;
-
-      border-radius:14px;
+      border-radius:10px;
     }
 
     .modal-close{
       position:absolute;
-
-      right:18px;
-
       top:18px;
-
-      width:44px;
-
-      height:44px;
-
+      right:18px;
+      width:45px;
+      height:45px;
       border-radius:50%;
-
-      border:
-        1px solid rgba(255,255,255,.25);
-
-      background:
-        rgba(0,0,0,.35);
-
+      border:1px solid rgba(255,255,255,.2);
+      background:rgba(0,0,0,.5);
       color:white;
-
-      font-size:25px;
+      font-size:27px;
+      line-height:1;
     }
 
-    .admin{
-      position:fixed;
-
-      inset:0;
-
-      z-index:30;
-
-      background:
-        rgba(20,17,15,.55);
-
-      backdrop-filter:
-        blur(12px);
-
-      display:none;
-
-      align-items:center;
-
-      justify-content:center;
-
-      padding:18px;
-    }
-
-    .admin.show{
-      display:flex;
-    }
-
-    .panel{
-      width:min(520px,100%);
-
-      max-height:90vh;
-
-      overflow:auto;
-
-      background:var(--card);
-
-      border-radius:28px;
-
-      padding:24px;
-
-      box-shadow:
-        0 25px 70px rgba(0,0,0,.24);
-    }
-
-    .panel-top{
-      display:flex;
-
-      justify-content:
-        space-between;
-
-      align-items:center;
-
-      gap:12px;
-    }
-
-    .panel h3{
-      font-family:
-        "Playfair Display",serif;
-
-      font-size:30px;
-
-      margin:0;
-    }
-
-    .xbtn{
-      border:0;
-
-      background:#f0ece8;
-
-      width:38px;
-
-      height:38px;
-
-      border-radius:50%;
-
-      font-size:20px;
-    }
-
-    .form{
-      display:grid;
-
-      gap:12px;
-
-      margin-top:20px;
-    }
-
-    label{
-      font-size:13px;
-
-      font-weight:700;
-
-      color:#4d4945;
-    }
-
-    input{
-      width:100%;
-
-      border:1px solid var(--line);
-
-      border-radius:14px;
-
-      padding:13px 14px;
-
-      outline:none;
-
-      background:#fff;
-    }
-
-    input:focus{
-      border-color:#a9856b;
-
-      box-shadow:
-        0 0 0 4px
-        rgba(169,133,107,.12);
-    }
-
-    .primary,
-    .secondary,
-    .danger{
-      border:0;
-
-      border-radius:14px;
-
-      padding:13px 16px;
-
-      font-weight:700;
-    }
-
-    .primary{
-      background:var(--text);
-
-      color:white;
-    }
-
-    .secondary{
-      background:#eee9e4;
-
-      color:var(--text);
-    }
-
-    .danger{
-      background:#fff0ed;
-
-      color:#9b3126;
-    }
-
-    .upload-box{
-      margin-top:18px;
-
-      border:
-        1px dashed #cbbcaf;
-
-      border-radius:18px;
-
-      padding:18px;
-
-      background:#fbf9f6;
-
-      text-align:center;
-    }
-
-    .upload-box input{
-      border:0;
-
-      padding:8px;
-
-      background:transparent;
-    }
-
-    .status{
-      font-size:13px;
-
-      color:var(--muted);
-
-      min-height:18px;
-
-      margin-top:9px;
-    }
-
-    .admin-photos{
-      display:grid;
-
-      gap:8px;
-
-      margin-top:16px;
-    }
-
-    .admin-row{
-      display:flex;
-
-      align-items:center;
-
-      gap:10px;
-
-      border:
-        1px solid var(--line);
-
-      border-radius:14px;
-
-      padding:8px;
-    }
-
-    .admin-row img{
-      width:54px;
-
-      height:54px;
-
-      border-radius:10px;
-
-      object-fit:cover;
-    }
-
-    .admin-row .name{
-      flex:1;
-
-      min-width:0;
-
-      font-size:12px;
-
-      white-space:nowrap;
-
-      overflow:hidden;
-
-      text-overflow:ellipsis;
-    }
-
-    .admin-row button{
-      border:0;
-
-      background:#fff0ed;
-
-      color:#9b3126;
-
-      padding:8px 10px;
-
-      border-radius:10px;
-    }
-
-    .note{
-      margin-top:14px;
-
-      padding:12px 14px;
-
-      background:#fff8e9;
-
-      border:
-        1px solid #f0dfb6;
-
-      border-radius:14px;
-
-      font-size:12px;
-
-      line-height:1.5;
-
-      color:#6d5a2b;
-    }
+    /* FOOTER */
 
     footer{
-      padding:10px 0 34px;
-
+      border-top:1px solid var(--line);
       text-align:center;
-
+      padding:35px 15px;
       color:var(--muted);
-
-      font-size:13px;
+      font-size:12px;
     }
 
-    .loader{
-      width:26px;
-
-      height:26px;
-
-      border:
-        3px solid #ddd;
-
-      border-top-color:#333;
-
-      border-radius:50%;
-
-      animation:
-        spin .8s linear infinite;
-
-      margin:35px auto;
+    .footer-names{
+      font-family:"Great Vibes",cursive;
+      font-size:38px;
+      color:var(--gold-dark);
+      margin-bottom:5px;
     }
 
-    @keyframes spin{
-      to{
-        transform:rotate(360deg);
+    /* MOBILE */
+
+    @media(max-width:720px){
+
+      .topbar{
+        padding:16px 0;
       }
-    }
 
-    @media(max-width:760px){
+      .mini-logo-text{
+        font-size:16px;
+      }
 
-      header{
-        padding-top:18px;
+      .scroll-upload{
+        padding:9px 13px;
+        font-size:12px;
       }
 
       .hero{
-        min-height:315px;
-
-        padding:24px;
-
+        min-height:440px;
         border-radius:26px;
       }
 
-      .gallery{
-        grid-template-columns:
-          repeat(2,1fr);
-
-        gap:9px;
+      .hero::before{
+        inset:12px;
+        border-radius:19px;
       }
 
-      .photo{
+      .hero-names{
+        font-size:76px;
+      }
+
+      .intro{
+        padding-top:48px;
+      }
+
+      .upload-card{
+        padding:20px 15px;
+        border-radius:23px;
+      }
+
+      .preview-grid{
+        grid-template-columns:repeat(3,1fr);
+      }
+
+      .gallery{
+        grid-template-columns:repeat(2,1fr);
+        gap:8px;
+      }
+
+      .photo-card{
         border-radius:14px;
       }
+
+      .gallery-head h3{
+        font-size:34px;
+      }
+
     }
+
   </style>
 </head>
 
 <body>
 
-  <div class="wrap">
+  <div class="container">
 
-    <header>
+    <header class="topbar">
 
-      <div class="brand">
+      <div class="mini-logo">
 
-        <div class="brand-mark">
-          ✦
+        <div class="mini-logo-icon">
+          A&Z
         </div>
 
-        <div>
-          Ahmet Zeynep Nikah Görüntüleri
+        <div class="mini-logo-text">
+          Nikah Albümümüz
         </div>
 
       </div>
 
       <button
-        class="admin-link"
-        id="adminOpen"
+        class="scroll-upload"
+        onclick="document.getElementById('upload').scrollIntoView({behavior:'smooth'})"
       >
-        Yönetici
+        ＋ Fotoğraf Ekle
       </button>
 
     </header>
@@ -751,116 +685,205 @@
 
     <section class="hero">
 
-      <div class="hero-copy">
+      <div class="hero-content">
 
-        <div class="eyebrow">
-          Özel Anılar
+        <div class="hero-small">
+          Nikah Hatıralarımız
         </div>
 
-        <h1>
-          Ahmet Zeynep
-          <br>
-          Nikah Görüntüleri
+        <h1 class="hero-names">
+          Ahmet & Zeynep
         </h1>
 
-        <p>
-          Bu linke sahip olan herkes
-          fotoğrafları görüntüleyebilir
-          ve yeni fotoğraf yükleyebilir.
-        </p>
+        <div class="hero-title">
+          Nikah Görüntüleri
+        </div>
+
+        <div class="hero-date">
+          04 • 09 • 2026
+        </div>
 
       </div>
 
     </section>
 
 
-    <section class="toolbar">
+    <section class="intro">
 
-      <div>
-
-        <h2>
-          Fotoğraflar
-        </h2>
-
-        <p>
-          Bir fotoğrafa dokunarak
-          büyük görüntüleyebilirsin.
-        </p>
-
+      <div class="ornament">
+        ❦
       </div>
 
-      <div
-        class="counter"
-        id="counter"
-      >
-        Yükleniyor…
-      </div>
+      <h2>
+        Bu güzel günü birlikte biriktirelim
+      </h2>
+
+      <p>
+        Nikahımızda çektiğiniz fotoğrafları buraya yükleyebilirsiniz.
+        Yüklenen fotoğraflar albümümüzde herkes tarafından görüntülenebilir.
+      </p>
 
     </section>
 
 
     <section
-      class="upload-box"
-      style="margin:0 0 24px"
+      class="upload-section"
+      id="upload"
     >
 
-      <strong>
-        Albümümüze Fotoğraf Ekle
-      </strong>
+      <div class="upload-card">
 
-      <p
-        style="
-          font-size:13px;
-          color:var(--muted)
-        "
-      >
-        Bu linki açan herkes
-        fotoğraf yükleyebilir.
-      </p>
+        <div class="upload-title">
 
-      <input
-        id="publicFileInput"
-        type="file"
-        accept="image/*"
-        multiple
-      >
+          <div class="camera">
+            📷
+          </div>
 
-      <button
-        class="primary"
-        id="publicUploadBtn"
-      >
-        Fotoğrafları Yükle
-      </button>
+          <h3>
+            Fotoğraf Yükle
+          </h3>
 
-      <div
-        class="status"
-        id="publicUploadStatus"
-      ></div>
+          <p>
+            Telefonundan bir veya birden fazla fotoğraf seç.
+            Ardından “Albümümüze Yükle” butonuna bas.
+          </p>
+
+        </div>
+
+
+        <div
+          class="drop-area"
+          id="dropArea"
+        >
+
+          <input
+            class="file-input"
+            id="fileInput"
+            type="file"
+            accept="image/*"
+            multiple
+          >
+
+          <button
+            class="choose-btn"
+            id="chooseBtn"
+            type="button"
+          >
+            📸 Fotoğraf Seç
+          </button>
+
+          <div class="drop-text">
+            Birden fazla fotoğraf seçebilirsin
+          </div>
+
+        </div>
+
+
+        <div
+          class="preview-title"
+          id="previewTitle"
+        >
+          Seçilen Fotoğraflar
+        </div>
+
+        <div
+          class="preview-grid"
+          id="previewGrid"
+        ></div>
+
+
+        <button
+          class="upload-btn"
+          id="uploadBtn"
+          type="button"
+        >
+          Albümümüze Yükle
+        </button>
+
+
+        <div
+          class="progress-wrap"
+          id="progressWrap"
+        >
+
+          <div class="progress-bar">
+
+            <div
+              class="progress-fill"
+              id="progressFill"
+            ></div>
+
+          </div>
+
+        </div>
+
+
+        <div
+          class="status"
+          id="uploadStatus"
+        ></div>
+
+      </div>
 
     </section>
 
 
-    <main
-      class="gallery"
-      id="gallery"
-    >
+    <section class="gallery-section">
 
-      <div class="loader"></div>
+      <div class="gallery-head">
 
-    </main>
+        <div>
+
+          <h3>
+            Nikah Albümümüz
+          </h3>
+
+          <p>
+            Yüklenen tüm anılar burada.
+          </p>
+
+        </div>
+
+        <div
+          class="photo-counter"
+          id="photoCounter"
+        >
+          Yükleniyor…
+        </div>
+
+      </div>
 
 
-    <footer>
-      Ahmet Zeynep Nikah Görüntüleri
-    </footer>
+      <div
+        class="gallery"
+        id="gallery"
+      >
+
+        <div class="loader"></div>
+
+      </div>
+
+    </section>
 
   </div>
 
 
+  <footer>
+
+    <div class="footer-names">
+      Ahmet & Zeynep
+    </div>
+
+    <div>
+      04 Eylül 2026 • Nikah Albümü
+    </div>
+
+  </footer>
+
+
   <div
     class="modal"
-    id="imageModal"
-    aria-hidden="true"
+    id="photoModal"
   >
 
     <button
@@ -872,155 +895,22 @@
 
     <img
       id="modalImage"
-      alt="Büyük fotoğraf"
+      alt="Nikah fotoğrafı"
     >
 
   </div>
 
 
-  <div
-    class="admin"
-    id="adminModal"
-    aria-hidden="true"
-  >
-
-    <div class="panel">
-
-      <div class="panel-top">
-
-        <h3>
-          Albüm Yönetimi
-        </h3>
-
-        <button
-          class="xbtn"
-          id="adminClose"
-        >
-          ×
-        </button>
-
-      </div>
-
-
-      <div id="loginArea">
-
-        <div class="form">
-
-          <div>
-
-            <label for="email">
-              E-posta
-            </label>
-
-            <input
-              id="email"
-              type="email"
-              autocomplete="username"
-              placeholder="ornek@mail.com"
-            >
-
-          </div>
-
-
-          <div>
-
-            <label for="password">
-              Şifre
-            </label>
-
-            <input
-              id="password"
-              type="password"
-              autocomplete="current-password"
-              placeholder="••••••••"
-            >
-
-          </div>
-
-
-          <button
-            class="primary"
-            id="loginBtn"
-          >
-            Giriş Yap
-          </button>
-
-        </div>
-
-
-        <div
-          class="status"
-          id="loginStatus"
-        ></div>
-
-      </div>
-
-
-      <div
-        id="manageArea"
-        style="display:none"
-      >
-
-        <p
-          style="
-            font-size:13px;
-            color:var(--muted);
-            margin-top:18px
-          "
-        >
-          Buradan albümdeki
-          fotoğrafları silebilirsin.
-        </p>
-
-        <div
-          class="admin-photos"
-          id="adminPhotos"
-        ></div>
-
-        <button
-          class="secondary"
-          id="logoutBtn"
-          style="
-            width:100%;
-            margin-top:16px
-          "
-        >
-          Çıkış Yap
-        </button>
-
-      </div>
-
-
-      <div class="note">
-
-        Supabase bağlantısını yaptıktan
-        ve Storage INSERT iznini herkese
-        açtıktan sonra linki olan herkes
-        fotoğraf yükleyebilir.
-
-        Silme yetkisini yalnızca
-        yönetici hesabına vermek
-        daha güvenlidir.
-
-      </div>
-
-    </div>
-
-  </div>
-
-
-  <script
-    src="
-https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2
-">
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
 
   <script>
 
-    // ==========================================
-    // SUPABASE BİLGİLERİNİ BURAYA YAZACAĞIZ
-    // ==========================================
+    /* ==========================================================
+       SUPABASE BİLGİLERİ
+
+       BURADAKİ 2 DEĞERİ KENDİ SUPABASE PROJENDEN ALACAĞIZ.
+       ========================================================== */
 
     const SUPABASE_URL =
       "BURAYA_SUPABASE_PROJECT_URL";
@@ -1028,97 +918,498 @@ https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2
     const SUPABASE_ANON_KEY =
       "BURAYA_SUPABASE_ANON_KEY";
 
-    const BUCKET =
+
+    /* Storage'da oluşturacağımız bucket adı */
+
+    const BUCKET_NAME =
       "album";
 
 
-    const client =
+    const supabaseClient =
       supabase.createClient(
         SUPABASE_URL,
         SUPABASE_ANON_KEY
       );
 
 
+    const fileInput =
+      document.getElementById("fileInput");
+
+    const chooseBtn =
+      document.getElementById("chooseBtn");
+
+    const uploadBtn =
+      document.getElementById("uploadBtn");
+
+    const previewGrid =
+      document.getElementById("previewGrid");
+
+    const previewTitle =
+      document.getElementById("previewTitle");
+
+    const uploadStatus =
+      document.getElementById("uploadStatus");
+
     const gallery =
-      document.getElementById(
-        "gallery"
-      );
+      document.getElementById("gallery");
 
-    const counter =
-      document.getElementById(
-        "counter"
-      );
+    const photoCounter =
+      document.getElementById("photoCounter");
 
-    const imageModal =
-      document.getElementById(
-        "imageModal"
-      );
+    const dropArea =
+      document.getElementById("dropArea");
+
+    const progressWrap =
+      document.getElementById("progressWrap");
+
+    const progressFill =
+      document.getElementById("progressFill");
+
+    const photoModal =
+      document.getElementById("photoModal");
 
     const modalImage =
-      document.getElementById(
-        "modalImage"
+      document.getElementById("modalImage");
+
+    const modalClose =
+      document.getElementById("modalClose");
+
+
+    let selectedFiles = [];
+
+
+    /* ==========================================================
+       FOTOĞRAF SEÇ
+       ========================================================== */
+
+    chooseBtn.addEventListener(
+      "click",
+      function(){
+
+        fileInput.click();
+
+      }
+    );
+
+
+    fileInput.addEventListener(
+      "change",
+      function(){
+
+        addFiles(
+          Array.from(fileInput.files)
+        );
+
+      }
+    );
+
+
+    /* ==========================================================
+       SÜRÜKLE BIRAK
+       ========================================================== */
+
+    dropArea.addEventListener(
+      "dragover",
+      function(event){
+
+        event.preventDefault();
+
+        dropArea.classList.add("drag");
+
+      }
+    );
+
+
+    dropArea.addEventListener(
+      "dragleave",
+      function(){
+
+        dropArea.classList.remove("drag");
+
+      }
+    );
+
+
+    dropArea.addEventListener(
+      "drop",
+      function(event){
+
+        event.preventDefault();
+
+        dropArea.classList.remove("drag");
+
+        addFiles(
+          Array.from(event.dataTransfer.files)
+        );
+
+      }
+    );
+
+
+    /* ==========================================================
+       DOSYALARI EKLE
+       ========================================================== */
+
+    function addFiles(files){
+
+      const images =
+        files.filter(
+          file =>
+            file.type.startsWith("image/")
+        );
+
+
+      images.forEach(
+        file => {
+
+          const alreadyAdded =
+            selectedFiles.some(
+              item =>
+                item.name === file.name &&
+                item.size === file.size &&
+                item.lastModified === file.lastModified
+            );
+
+
+          if(!alreadyAdded){
+
+            selectedFiles.push(file);
+
+          }
+
+        }
       );
 
-    const adminModal =
-      document.getElementById(
-        "adminModal"
+
+      renderPreview();
+
+    }
+
+
+    /* ==========================================================
+       ÖNİZLEME
+       ========================================================== */
+
+    function renderPreview(){
+
+      previewGrid.innerHTML = "";
+
+
+      if(selectedFiles.length === 0){
+
+        previewTitle.style.display =
+          "none";
+
+        uploadBtn.style.display =
+          "none";
+
+        return;
+
+      }
+
+
+      previewTitle.style.display =
+        "block";
+
+      uploadBtn.style.display =
+        "block";
+
+
+      selectedFiles.forEach(
+        (file,index) => {
+
+          const reader =
+            new FileReader();
+
+
+          reader.onload =
+            function(event){
+
+              const item =
+                document.createElement("div");
+
+
+              item.className =
+                "preview-item";
+
+
+              item.innerHTML = `
+
+                <img
+                  src="${event.target.result}"
+                  alt="Seçilen fotoğraf"
+                >
+
+                <button
+                  class="preview-remove"
+                  type="button"
+                  aria-label="Fotoğrafı kaldır"
+                >
+                  ×
+                </button>
+
+              `;
+
+
+              item
+                .querySelector(
+                  ".preview-remove"
+                )
+                .addEventListener(
+                  "click",
+                  function(){
+
+                    selectedFiles.splice(
+                      index,
+                      1
+                    );
+
+                    renderPreview();
+
+                  }
+                );
+
+
+              previewGrid.appendChild(
+                item
+              );
+
+            };
+
+
+          reader.readAsDataURL(
+            file
+          );
+
+        }
       );
 
-    const loginArea =
-      document.getElementById(
-        "loginArea"
-      );
-
-    const manageArea =
-      document.getElementById(
-        "manageArea"
-      );
-
-    const adminPhotos =
-      document.getElementById(
-        "adminPhotos"
-      );
+    }
 
 
-    let currentFiles = [];
+    /* ==========================================================
+       GÜVENLİ DOSYA ADI
+       ========================================================== */
+
+    function createFileName(file){
+
+      let extension =
+        "jpg";
 
 
-    function safeName(name){
+      if(file.name.includes(".")){
 
-      const ext =
-        name.includes(".")
-          ? "." +
-            name
-              .split(".")
-              .pop()
-              .toLowerCase()
-          : "";
+        extension =
+          file.name
+            .split(".")
+            .pop()
+            .toLowerCase();
+
+      }
+
+
+      const random =
+        Math.random()
+          .toString(36)
+          .substring(2,10);
+
 
       return (
         Date.now()
         +
         "-"
         +
-        Math.random()
-          .toString(36)
-          .slice(2,8)
+        random
         +
-        ext
+        "."
+        +
+        extension
       );
 
     }
 
 
-    function publicUrl(path){
+    /* ==========================================================
+       FOTOĞRAFLARI YÜKLE
+       ========================================================== */
 
-      return client.storage
-        .from(BUCKET)
-        .getPublicUrl(path)
-        .data
-        .publicUrl;
+    uploadBtn.addEventListener(
+      "click",
+      async function(){
 
-    }
+        if(selectedFiles.length === 0){
 
+          uploadStatus.className =
+            "status error";
+
+          uploadStatus.textContent =
+            "Önce fotoğraf seç.";
+
+          return;
+
+        }
+
+
+        uploadBtn.disabled =
+          true;
+
+
+        progressWrap.style.display =
+          "block";
+
+
+        progressFill.style.width =
+          "0%";
+
+
+        uploadStatus.className =
+          "status";
+
+
+        uploadStatus.textContent =
+          selectedFiles.length
+          +
+          " fotoğraf yükleniyor…";
+
+
+        let uploaded =
+          0;
+
+
+        let failed =
+          0;
+
+
+        for(
+          let i = 0;
+          i < selectedFiles.length;
+          i++
+        ){
+
+          const file =
+            selectedFiles[i];
+
+
+          const fileName =
+            createFileName(file);
+
+
+          const {
+            error
+          } =
+          await supabaseClient
+            .storage
+            .from(BUCKET_NAME)
+            .upload(
+              fileName,
+              file,
+              {
+                cacheControl:"3600",
+                upsert:false,
+                contentType:
+                  file.type
+              }
+            );
+
+
+          if(error){
+
+            console.error(
+              "Yükleme hatası:",
+              error
+            );
+
+            failed++;
+
+          }
+          else{
+
+            uploaded++;
+
+          }
+
+
+          const percent =
+            Math.round(
+              ((i + 1)
+              /
+              selectedFiles.length)
+              *
+              100
+            );
+
+
+          progressFill.style.width =
+            percent
+            +
+            "%";
+
+        }
+
+
+        if(uploaded > 0){
+
+          uploadStatus.className =
+            "status success";
+
+
+          uploadStatus.textContent =
+            uploaded
+            +
+            " fotoğraf başarıyla albüme eklendi ❤️";
+
+
+          selectedFiles =
+            [];
+
+
+          fileInput.value =
+            "";
+
+
+          renderPreview();
+
+
+          await loadGallery();
+
+        }
+
+
+        if(failed > 0){
+
+          uploadStatus.className =
+            "status error";
+
+
+          uploadStatus.textContent =
+            failed
+            +
+            " fotoğraf yüklenemedi. Supabase ayarlarını kontrol et.";
+
+        }
+
+
+        uploadBtn.disabled =
+          false;
+
+
+        setTimeout(
+          function(){
+
+            progressWrap.style.display =
+              "none";
+
+          },
+          1400
+        );
+
+      }
+    );
+
+
+    /* ==========================================================
+       GALERİYİ YÜKLE
+       ========================================================== */
 
     async function loadGallery(){
 
@@ -1130,8 +1421,9 @@ https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2
         data,
         error
       } =
-      await client.storage
-        .from(BUCKET)
+      await supabaseClient
+        .storage
+        .from(BUCKET_NAME)
         .list(
           "",
           {
@@ -1147,141 +1439,159 @@ https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2
 
       if(error){
 
-        gallery.innerHTML = `
-
-          <div class="empty">
-
-            <strong>
-              Albüm henüz bağlanmadı.
-            </strong>
-
-            Supabase ayarlarını yaptıktan
-            sonra fotoğraflar burada
-            görünecek.
-
-          </div>
-
-        `;
-
-        counter.textContent =
-          "0 fotoğraf";
-
-        console.error(error);
-
-        return;
-
-      }
-
-
-      currentFiles =
-        (data || [])
-        .filter(
-          item =>
-            item.name &&
-            item.id
+        console.error(
+          "Galeri yükleme hatası:",
+          error
         );
 
 
-      counter.textContent =
-        currentFiles.length
-        +
-        " fotoğraf";
-
-
-      if(!currentFiles.length){
-
         gallery.innerHTML = `
 
           <div class="empty">
 
             <strong>
-              Henüz fotoğraf yok.
+              Albüm hazırlanıyor
             </strong>
 
-            Yukarıdaki bölümden
-            ilk fotoğrafı yükleyebilirsin.
+            Fotoğraf sisteminin bağlantısı
+            tamamlandığında fotoğraflar
+            burada görünecek.
 
           </div>
 
         `;
 
-        renderAdminList();
+
+        photoCounter.textContent =
+          "0 Fotoğraf";
+
 
         return;
 
       }
 
 
-      gallery.innerHTML = "";
+      const files =
+        (data || [])
+          .filter(
+            item =>
+              item.name &&
+              item.id
+          );
 
 
-      currentFiles.forEach(
+      photoCounter.textContent =
+        files.length
+        +
+        " Fotoğraf";
+
+
+      if(files.length === 0){
+
+        gallery.innerHTML = `
+
+          <div class="empty">
+
+            <strong>
+              İlk fotoğrafı sen ekle
+            </strong>
+
+            Henüz albümümüze fotoğraf
+            yüklenmedi.
+
+          </div>
+
+        `;
+
+
+        return;
+
+      }
+
+
+      gallery.innerHTML =
+        "";
+
+
+      files.forEach(
         file => {
 
-          const url =
-            publicUrl(
+          const {
+            data
+          } =
+          supabaseClient
+            .storage
+            .from(BUCKET_NAME)
+            .getPublicUrl(
               file.name
             );
 
 
-          const button =
+          const imageUrl =
+            data.publicUrl;
+
+
+          const card =
             document.createElement(
               "button"
             );
 
 
-          button.className =
-            "photo";
+          card.className =
+            "photo-card";
 
 
-          button.innerHTML = `
+          card.type =
+            "button";
+
+
+          card.innerHTML = `
 
             <img
-              src="${url}"
+              src="${imageUrl}"
               loading="lazy"
-              alt="Albüm fotoğrafı"
+              alt="Ahmet ve Zeynep nikah fotoğrafı"
             >
-
-            <span class="shade">
-              Büyüt
-            </span>
 
           `;
 
 
-          button.addEventListener(
+          card.addEventListener(
             "click",
-            () => openImage(url)
+            function(){
+
+              openModal(
+                imageUrl
+              );
+
+            }
           );
 
 
           gallery.appendChild(
-            button
+            card
           );
 
         }
       );
 
-
-      renderAdminList();
-
     }
 
 
-    function openImage(url){
+    /* ==========================================================
+       TAM EKRAN
+       ========================================================== */
+
+    function openModal(url){
 
       modalImage.src =
         url;
 
-      imageModal
-        .classList
-        .add("show");
 
-      imageModal
-        .setAttribute(
-          "aria-hidden",
-          "false"
-        );
+      photoModal.classList.add(
+        "show"
+      );
+
 
       document.body.style.overflow =
         "hidden";
@@ -1289,20 +1599,16 @@ https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2
     }
 
 
-    function closeImage(){
+    function closeModal(){
 
-      imageModal
-        .classList
-        .remove("show");
+      photoModal.classList.remove(
+        "show"
+      );
 
-      imageModal
-        .setAttribute(
-          "aria-hidden",
-          "true"
-        );
 
       modalImage.src =
         "";
+
 
       document.body.style.overflow =
         "";
@@ -1310,502 +1616,45 @@ https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2
     }
 
 
-    async function refreshSessionUI(){
+    modalClose.addEventListener(
+      "click",
+      closeModal
+    );
 
-      const {
-        data:{
-          session
+
+    photoModal.addEventListener(
+      "click",
+      function(event){
+
+        if(event.target === photoModal){
+
+          closeModal();
+
         }
-      } =
-      await client.auth
-        .getSession();
-
-
-      const loggedIn =
-        !!session;
-
-
-      loginArea.style.display =
-        loggedIn
-          ? "none"
-          : "block";
-
-
-      manageArea.style.display =
-        loggedIn
-          ? "block"
-          : "none";
-
-
-      if(loggedIn){
-
-        renderAdminList();
 
       }
-
-    }
-
-
-    function renderAdminList(){
-
-      if(
-        manageArea.style.display
-        ===
-        "none"
-      ){
-        return;
-      }
+    );
 
 
-      if(
-        !currentFiles.length
-      ){
+    document.addEventListener(
+      "keydown",
+      function(event){
 
-        adminPhotos.innerHTML =
-          '<div class="status">Henüz fotoğraf yok.</div>';
+        if(event.key === "Escape"){
 
-        return;
+          closeModal();
+
+        }
 
       }
+    );
 
 
-      adminPhotos.innerHTML =
-        "";
-
-
-      currentFiles.forEach(
-        file => {
-
-          const row =
-            document.createElement(
-              "div"
-            );
-
-
-          row.className =
-            "admin-row";
-
-
-          row.innerHTML = `
-
-            <img
-              src="${publicUrl(file.name)}"
-              alt=""
-            >
-
-            <div class="name">
-              ${file.name}
-            </div>
-
-            <button type="button">
-              Sil
-            </button>
-
-          `;
-
-
-          row
-            .querySelector(
-              "button"
-            )
-            .addEventListener(
-              "click",
-              () =>
-                deletePhoto(
-                  file.name
-                )
-            );
-
-
-          adminPhotos
-            .appendChild(
-              row
-            );
-
-        }
-      );
-
-    }
-
-
-    async function deletePhoto(name){
-
-      if(
-        !confirm(
-          "Bu fotoğraf silinsin mi?"
-        )
-      ){
-        return;
-      }
-
-
-      const {
-        error
-      } =
-      await client.storage
-        .from(BUCKET)
-        .remove(
-          [name]
-        );
-
-
-      if(error){
-
-        alert(
-          "Silinemedi: "
-          +
-          error.message
-        );
-
-        return;
-
-      }
-
-
-      await loadGallery();
-
-    }
-
-
-    document
-      .getElementById(
-        "adminOpen"
-      )
-      .addEventListener(
-        "click",
-        async () => {
-
-          adminModal
-            .classList
-            .add("show");
-
-          adminModal
-            .setAttribute(
-              "aria-hidden",
-              "false"
-            );
-
-          document.body.style.overflow =
-            "hidden";
-
-          await refreshSessionUI();
-
-        }
-      );
-
-
-    document
-      .getElementById(
-        "adminClose"
-      )
-      .addEventListener(
-        "click",
-        () => {
-
-          adminModal
-            .classList
-            .remove("show");
-
-          adminModal
-            .setAttribute(
-              "aria-hidden",
-              "true"
-            );
-
-          document.body.style.overflow =
-            "";
-
-        }
-      );
-
-
-    document
-      .getElementById(
-        "modalClose"
-      )
-      .addEventListener(
-        "click",
-        closeImage
-      );
-
-
-    imageModal
-      .addEventListener(
-        "click",
-        e => {
-
-          if(
-            e.target === imageModal
-          ){
-
-            closeImage();
-
-          }
-
-        }
-      );
-
-
-    adminModal
-      .addEventListener(
-        "click",
-        e => {
-
-          if(
-            e.target === adminModal
-          ){
-
-            adminModal
-              .classList
-              .remove("show");
-
-            document.body.style.overflow =
-              "";
-
-          }
-
-        }
-      );
-
-
-    document
-      .getElementById(
-        "loginBtn"
-      )
-      .addEventListener(
-        "click",
-        async () => {
-
-          const email =
-            document
-              .getElementById(
-                "email"
-              )
-              .value
-              .trim();
-
-
-          const password =
-            document
-              .getElementById(
-                "password"
-              )
-              .value;
-
-
-          const status =
-            document
-              .getElementById(
-                "loginStatus"
-              );
-
-
-          if(
-            !email ||
-            !password
-          ){
-
-            status.textContent =
-              "E-posta ve şifreyi yaz.";
-
-            return;
-
-          }
-
-
-          status.textContent =
-            "Giriş yapılıyor…";
-
-
-          const {
-            error
-          } =
-          await client.auth
-            .signInWithPassword(
-              {
-                email,
-                password
-              }
-            );
-
-
-          if(error){
-
-            status.textContent =
-              "Giriş başarısız: "
-              +
-              error.message;
-
-            return;
-
-          }
-
-
-          status.textContent =
-            "";
-
-
-          await refreshSessionUI();
-
-          await loadGallery();
-
-        }
-      );
-
-
-    document
-      .getElementById(
-        "logoutBtn"
-      )
-      .addEventListener(
-        "click",
-        async () => {
-
-          await client.auth
-            .signOut();
-
-          await refreshSessionUI();
-
-        }
-      );
-
-
-    document
-      .getElementById(
-        "publicUploadBtn"
-      )
-      .addEventListener(
-        "click",
-        async () => {
-
-          const input =
-            document
-              .getElementById(
-                "publicFileInput"
-              );
-
-
-          const files =
-            Array.from(
-              input.files || []
-            );
-
-
-          const status =
-            document
-              .getElementById(
-                "publicUploadStatus"
-              );
-
-
-          if(
-            !files.length
-          ){
-
-            status.textContent =
-              "Önce en az bir fotoğraf seç.";
-
-            return;
-
-          }
-
-
-          status.textContent =
-            `${files.length} fotoğraf yükleniyor…`;
-
-
-          let success = 0;
-
-
-          for(
-            const file
-            of files
-          ){
-
-            const path =
-              safeName(
-                file.name
-              );
-
-
-            const {
-              error
-            } =
-            await client.storage
-              .from(BUCKET)
-              .upload(
-                path,
-                file,
-                {
-                  cacheControl:
-                    "3600",
-
-                  upsert:
-                    false,
-
-                  contentType:
-                    file.type
-                    ||
-                    undefined
-                }
-              );
-
-
-            if(error){
-
-              console.error(
-                error
-              );
-
-
-              status.textContent =
-                "Bazı fotoğraflar yüklenemedi: "
-                +
-                error.message;
-
-
-              continue;
-
-            }
-
-
-            success++;
-
-          }
-
-
-          if(
-            success
-            ===
-            files.length
-          ){
-
-            status.textContent =
-              `${success} fotoğraf başarıyla yüklendi.`;
-
-          }
-
-
-          input.value =
-            "";
-
-
-          await loadGallery();
-
-        }
-      );
-
-
-    client.auth
-      .onAuthStateChange(
-        () =>
-          refreshSessionUI()
-      );
-
+    /* ==========================================================
+       SAYFA AÇILINCA
+       ========================================================== */
 
     loadGallery();
-
-    refreshSessionUI();
 
   </script>
 
